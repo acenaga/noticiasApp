@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NoticiasService } from 'src/app/services/noticias.service';
 import { Article } from 'src/app/interfaces/interfaces';
 
@@ -15,11 +15,34 @@ export class Tab1Page implements OnInit {
   constructor( private noticiasService: NoticiasService ) {}
 
   ngOnInit() {
+    this.cargarNoticias();
+  }
+
+  loadData( event ) {
+
+    console.log(event);
+
+    this.cargarNoticias( event );
+
+  }
+
+  cargarNoticias( event? ) {
     this.noticiasService.getTopHeadlines()
       .subscribe( resp => {
-        console.log('noticias', resp);
+        console.log( 'noticias', resp );
+
+        if (resp.articles.length === 0) {
+          event.target.disabled = true;
+        }
+
         this.noticias.push(...resp.articles);
+
+        if ( event ) {
+            event.target.complete();
+          }
       });
+
+
   }
 }
 
