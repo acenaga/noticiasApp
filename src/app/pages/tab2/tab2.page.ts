@@ -39,12 +39,12 @@ export class Tab2Page implements OnInit {
 
     this.noticiasService.getTopHeadlinesCategoria( categoria )
           .subscribe( resp => {
-            console.log(resp);
+            // console.log(resp);
             this.noticias.push( ...resp.articles );
 
-            if (resp.articles.length === 0) {
+            /* if (resp.articles.length === 0) {
               event.target.disabled = true;
-            }
+            } */
 
             if ( event ) {
 

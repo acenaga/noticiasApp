@@ -4,9 +4,10 @@
       <span class="text-primary">{{ i + 1 }}. </span>
       <span class="noticia-source-name">{{ noticia.source.name }}</span>
     </ion-card-subtitle>
-    <ion-card-title>{{ noticia.title }}</ion-card-title>
+    <ion-card-title (click)="abrirNoticia()" >{{ noticia.title }}</ion-card-title>
   </ion-card-header>
-  <ion-img  *ngIf="noticia.urlToImage"
+  <ion-img  (click)="abrirNoticia()"
+            *ngIf="noticia.urlToImage"
             [src]="noticia.urlToImage">
   </ion-img>
   <ion-card-content>

@@ -20,7 +20,7 @@ export class Tab1Page implements OnInit {
 
   loadData( event ) {
 
-    console.log(event);
+    // console.log(event);
 
     this.cargarNoticias( event );
 
@@ -29,7 +29,7 @@ export class Tab1Page implements OnInit {
   cargarNoticias( event? ) {
     this.noticiasService.getTopHeadlines()
       .subscribe( resp => {
-        console.log( 'noticias', resp );
+        // sconsole.log( 'noticias', resp );
 
         if (resp.articles.length === 0) {
           event.target.disabled = true;
