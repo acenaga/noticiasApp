@@ -1,0 +1,825 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200112.231313.16224.0.001.json",
+    "dumpEventTime": "2020-01-12T23:13:13Z",
+    "dumpEventTimeStamp": "1578881593784",
+    "processId": 16224,
+    "cwd": "C:\\Users\\amari\\Documents\\ionic\\noticiasApp",
+    "commandLine": [
+      "node",
+      "C:\\Users\\amari\\AppData\\Roaming\\npm\\\\node_modules\\cordova\\bin\\cordova",
+      "plugin",
+      "ls",
+      "--no-telemetry",
+      "--no-update-notifier"
+    ],
+    "nodejsVersion": "v12.13.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.13.0",
+      "v8": "7.7.299.13-node.12",
+      "uv": "1.32.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.13.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "AMD A12-9720P RADEON R7, 12 COMPUTE CORES 4C+8G",
+        "speed": 2695,
+        "user": 259656,
+        "nice": 0,
+        "sys": 332531,
+        "idle": 604515,
+        "irq": 21875
+      },
+      {
+        "model": "AMD A12-9720P RADEON R7, 12 COMPUTE CORES 4C+8G",
+        "speed": 2695,
+        "user": 282390,
+        "nice": 0,
+        "sys": 295359,
+        "idle": 618515,
+        "irq": 6218
+      },
+      {
+        "model": "AMD A12-9720P RADEON R7, 12 COMPUTE CORES 4C+8G",
+        "speed": 2695,
+        "user": 273859,
+        "nice": 0,
+        "sys": 285656,
+        "idle": 636750,
+        "irq": 3703
+      },
+      {
+        "model": "AMD A12-9720P RADEON R7, 12 COMPUTE CORES 4C+8G",
+        "speed": 2695,
+        "user": 258343,
+        "nice": 0,
+        "sys": 236500,
+        "idle": 701421,
+        "irq": 2375
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "vEthernet (DockerNAT)",
+        "internal": false,
+        "mac": "00:15:5d:01:64:15",
+        "address": "fe80::995:f257:78e8:1908",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 19
+      },
+      {
+        "name": "vEthernet (DockerNAT)",
+        "internal": false,
+        "mac": "00:15:5d:01:64:15",
+        "address": "10.0.75.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:0c",
+        "address": "fe80::91d9:3a1e:47:bbc7",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:0c",
+        "address": "192.168.56.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "f0:03:8c:c6:b5:af",
+        "address": "2800:810:454:dba::1002",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "f0:03:8c:c6:b5:af",
+        "address": "2800:810:454:dba:c13b:62ea:7133:598e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "f0:03:8c:c6:b5:af",
+        "address": "2800:810:454:dba:b5d2:220d:5e43:5e6e",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "f0:03:8c:c6:b5:af",
+        "address": "fe80::c13b:62ea:7133:598e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 7
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "f0:03:8c:c6:b5:af",
+        "address": "192.168.0.19",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "vEthernet (Default Switch) 2",
+        "internal": false,
+        "mac": "00:15:5d:22:b4:9a",
+        "address": "fe80::440d:f81c:ed3d:f888",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 29
+      },
+      {
+        "name": "vEthernet (Default Switch) 2",
+        "internal": false,
+        "mac": "00:15:5d:22:b4:9a",
+        "address": "192.168.226.65",
+        "netmask": "255.255.255.240",
+        "family": "IPv4"
+      }
+    ],
+    "host": "Marauder"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff799101389",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7991057cc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799104778",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7991f332b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7999f6f4e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7999def91",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7998ac85c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7998b4961",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7998a9fc3",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7998a8794",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7998c9a65",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799636239",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799e22c6d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799d9e424",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799e88f73",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799da27fc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799d9fdb1",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799d9f99c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799904f43",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7999048c6",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7999d5b3b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7992195ce",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799219877",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff79921874a",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7991bb715",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799219263",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7990d666c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff799ed5d58",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ffc0dc77bd4",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ffc0f1aced1",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 17104896,
+    "totalCommittedMemory": 17104896,
+    "usedMemory": 15226016,
+    "availableMemory": 2183173784,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047488,
+        "used": 1047456,
+        "available": 32
+      },
+      "old_space": {
+        "memorySize": 12955648,
+        "committedMemory": 12955648,
+        "capacity": 12866424,
+        "used": 11779944,
+        "available": 1086480
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 425984,
+        "capacity": 302848,
+        "used": 289600,
+        "available": 13248
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 1052672,
+        "capacity": 865440,
+        "used": 778880,
+        "available": 86560
+      },
+      "large_object_space": {
+        "memorySize": 1310720,
+        "committedMemory": 1310720,
+        "capacity": 1294288,
+        "used": 1294288,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 2.468,
+    "kernelCpuSeconds": 2.375,
+    "cpuConsumptionPercent": 2.2318,
+    "maxRss": 33624064,
+    "pageFaults": {
+      "IORequired": 27891,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1188,
+      "writes": 101
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "": "C:=C:\\Users\\amari\\Documents\\ionic\\noticiasApp",
+    "allusersprofile": "C:\\ProgramData",
+    "appdata": "C:\\Users\\amari\\AppData\\Roaming",
+    "chocolateyinstall": "C:\\ProgramData\\chocolatey",
+    "chocolateylastpathupdate": "132163969115495928",
+    "colorterm": "truecolor",
+    "commonprogramfiles": "C:\\Program Files\\Common Files",
+    "commonprogramfiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "commonprogramw6432": "C:\\Program Files\\Common Files",
+    "computername": "MARAUDER",
+    "comspec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "dp0": "C:\\Users\\amari\\AppData\\Roaming\\npm\\",
+    "driverdata": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "homedrive": "C:",
+    "homepath": "\\Users\\amari",
+    "ionic_cli_bin": "C:\\Users\\amari\\AppData\\Roaming\\npm\\node_modules\\ionic\\bin\\ionic",
+    "ionic_cli_lib": "C:\\Users\\amari\\AppData\\Roaming\\npm\\node_modules\\ionic",
+    "ionic_cli_local_error": "LOCAL_CLI_NOT_FOUND",
+    "lang": "es_ES.UTF-8",
+    "localappdata": "C:\\Users\\amari\\AppData\\Local",
+    "logonserver": "\\\\MARAUDER",
+    "memu_path": "C:\\Program Files (x86)\\Microvirt",
+    "number_of_processors": "4",
+    "onedrive": "C:\\Users\\amari\\OneDrive",
+    "onedriveconsumer": "C:\\Users\\amari\\OneDrive",
+    "os": "Windows_NT",
+    "path": "C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;;C:\\Program Files (x86)\\AOMEI Backupper;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\amari\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\;C:\\Users\\amari\\AppData\\Local\\Programs\\Python\\Python37-32\\;C:\\Users\\amari\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\amari\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\WinNMP\\bin;C:\\Users\\amari\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\amari\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\amari\\AppData\\Roaming\\npm",
+    "pathext": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC;.CPL",
+    "processor_architecture": "AMD64",
+    "processor_identifier": "AMD64 Family 21 Model 101 Stepping 1, AuthenticAMD",
+    "processor_level": "21",
+    "processor_revision": "6501",
+    "programdata": "C:\\ProgramData",
+    "programfiles": "C:\\Program Files",
+    "programfiles(x86)": "C:\\Program Files (x86)",
+    "programw6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "psmodulepath": "C:\\Users\\amari\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "public": "C:\\Users\\Public",
+    "sessionname": "Console",
+    "systemdrive": "C:",
+    "systemroot": "C:\\WINDOWS",
+    "temp": "C:\\Users\\amari\\AppData\\Local\\Temp",
+    "term_program": "vscode",
+    "term_program_version": "1.41.1",
+    "tmp": "C:\\Users\\amari\\AppData\\Local\\Temp",
+    "tmpdir": "C:\\Users\\Public\\Documents\\Wondershare\\CreatorTemp",
+    "userdomain": "MARAUDER",
+    "userdomain_roamingprofile": "MARAUDER",
+    "username": "amari",
+    "userprofile": "C:\\Users\\amari",
+    "vbox_msi_install_path": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "windir": "C:\\WINDOWS",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll"
+  ]
+}

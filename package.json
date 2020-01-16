@@ -18,7 +18,9 @@
     "@angular/forms": "~8.1.2",
     "@angular/platform-browser": "~8.1.2",
     "@angular/platform-browser-dynamic": "~8.1.2",
+    "@angular/pwa": "^0.803.22",
     "@angular/router": "~8.1.2",
+    "@angular/service-worker": "~8.1.2",
     "@ionic-native/core": "^5.0.0",
     "@ionic-native/in-app-browser": "^5.16.0",
     "@ionic-native/social-sharing": "^5.16.0",
@@ -38,7 +40,7 @@
   },
   "devDependencies": {
     "@angular-devkit/architect": "~0.801.2",
-    "@angular-devkit/build-angular": "~0.801.2",
+    "@angular-devkit/build-angular": "^0.803.22",
     "@angular-devkit/core": "~8.1.2",
     "@angular-devkit/schematics": "~8.1.2",
     "@angular/cli": "~8.1.2",
@@ -78,7 +80,6 @@
       "cordova-plugin-statusbar": {},
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
-<<<<<<< HEAD
       "cordova-plugin-ionic-webview": {
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
@@ -86,13 +87,6 @@
     },
     "platforms": [
       "android"
-=======
-      "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
-    },
-    "platforms": [
-      "browser"
->>>>>>> 79c8d91d404c0c8864e88faea496784851ff019d
     ]
   }
 }
